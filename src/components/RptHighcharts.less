@@ -1,0 +1,71 @@
+
+@nav-border-radius:25px;
+#index_rpt {
+    background-color: #fff;
+    padding:20px;
+    height: 500px;
+    .highchart-wrap {
+        overflow: hidden;
+    }
+    .el-tabs__header {
+        border-bottom: none;
+        margin-bottom: 30px;
+    }
+    .el-tabs__nav {
+        border:1px solid #ddd;
+        /* border-radius: @nav-border-radius; */
+        color:#4D4D4D;
+        font-size: 16px;
+    }
+    .el-tabs--card>.el-tabs__header .el-tabs__item {
+        width: 132px;
+        height: 30px;
+        line-height: 30px;
+        color: #666;
+        text-align: center;
+    }
+    .el-tabs--card>.el-tabs__header .el-tabs__item.is-active {
+        border-color:#569DFF;
+        background-color: #569DFF;
+        color:#fff;
+        border-radius: 4px;
+    }
+    .sumRpt {
+        margin-bottom: 15px;
+        .cell {
+            cursor: pointer;
+        }
+        .currentType {
+            .rptToday {
+                color:#3A72EC;
+            }
+            .rptYestoday {
+                color:#24C86A;
+            }
+        }
+        p {
+            margin:5px 0;
+            font-size:22px;
+        }
+        .rptTypeTitle {
+            font-size:12px;
+            color:#D0D1D3;
+        }
+        .rptYestoday {
+            color:#7E7F80;
+        }
+        .el-table::before {
+            height: 0;
+        }
+        .el-table::after {
+            width: 0;
+        }
+        .el-table, .el-table td, .el-table th.is-leaf {
+            border-color:#fff;
+        }
+        .el-table--enable-row-hover .el-table__body tr:hover>td {
+            background-color: transparent
+        }
+    }
+}
+

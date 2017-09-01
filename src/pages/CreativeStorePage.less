@@ -1,0 +1,67 @@
+.creative_store {
+    padding: 20px;
+    background-color: #fff;
+    min-height: 500px;
+    .putsta-popover-position(@n) when (@n < 4) {
+        .putsta-popover-position((@n + 1));
+        &:nth-last-child(@{n}) {
+            .el-popover {
+                bottom: 0;
+            }
+        }      
+    }
+    .filter {
+        border-bottom: 1px solid #dfe6ec;
+        padding-bottom: 20px;
+        .el-row {
+            margin: 10px 0;
+        }
+        .el-select {
+            input {
+                border-radius: 20px;
+            }
+        }
+        .el-input {
+            display: inline-block;
+            input {
+                border-radius: 20px;
+            }
+        }
+    }
+    .action {
+        margin: 20px 0;
+    }
+    .idea-list {
+        line-height: 1;       
+        tbody tr {
+            font-size: 12px;
+            .putsta-popover-position(1);
+            .el-popover {
+                right: 180px;
+            }
+            td:nth-child(2) {
+                div:nth-child(2) {
+                    margin-left: 5px;
+                    span {
+                        display: block;
+                    }
+                }
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border: none;
+                }
+                p {
+                    margin: 0 0 5px;
+                }
+            }
+        }
+        .cell {
+            line-height: initial;
+            padding: 0 10px;
+        }
+    }
+    .el-dialog  {
+        width: 500px;
+    }
+}

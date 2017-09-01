@@ -1,0 +1,129 @@
+#rpt_container_day {
+	background-color: #fff;
+	padding: 0;
+	.topWrap {
+		display: flex;
+	}
+	.tableContainer {
+		padding: 0 20px 20px;
+		.el-table th>.cell {
+			font-size: 14px;
+			color: #000;
+		}
+		.el-table__body .cell {
+			font-size: 12px;
+			color: #333;
+		}
+		.el-table__empty-block {
+			max-height: 150px;
+		}
+	}
+	.el-table__fixed, .el-table__fixed-right {
+		overflow: hidden;
+	}
+	.titleWrap {
+		border-bottom: 1px solid #dfe6ec;
+		height: 40px;
+		line-height: 40px;
+		margin-bottom: 15px;
+		font-size: 14px;
+		color: #666;
+		span {
+			color: #000;
+		}
+	}
+	.compareTab {
+		.el-tabs__header {
+			margin-bottom: 20px;
+		}
+		.el-tabs__item {
+			min-width: 90px;
+			height: 55px;
+			line-height: 55px;
+			text-align: center;
+		}
+		.el-tabs__item.is-active {
+			color: #ff3c00;
+		}
+		.el-tabs__active-bar {
+			background-color: #ff3c00;
+		}
+	}
+	.keyTable::before {
+		height: 0;
+	}
+	.keyTable.el-table:after {
+		width: 0;
+	}
+	.keyTable {
+		border: none;
+		.moreDataWrap {
+			float: none !important;
+		}
+		.el-table__body tr.hover-row>td {
+		    background-color: #fff;
+		}
+		.el-table__fixed, .el-table__fixed-right {
+			box-shadow: none;
+		}
+		.el-table__fixed-right::before, .el-table__fixed::before {
+			height: 0;
+		}
+		td {
+			position: relative;
+			text-align: center;
+			border-bottom: none;
+			vertical-align: middle;
+			border-right: 2px solid #fff;
+			padding: 0;
+			.cell {
+				padding: 0;
+				.cellWrap {
+					padding: 10px;
+					cursor: pointer;
+				}
+				.active {
+					height: 60px;
+					background-color: #79B1FF;
+					.key, .keyValue {
+						color: #fff;
+					}
+				}
+			}
+			.el-icon-arrow-down {
+				margin-left: 10px;
+			}
+			p {
+				margin: 0;
+			}
+			.key {
+				color: #999;
+				white-space: nowrap;
+			}
+			.keyValue {
+				margin-top: 15px;
+				font-size: 20px;
+				white-space: nowrap;
+				color: #333;
+			}
+			.split {
+				position: absolute;
+				width: 1px;
+				height: 45px;
+				right: -1px;
+				top: 20px;
+				background-color: #e5ebf0;
+			}
+		}
+	}
+	.split {
+		height: 30px;
+		background-color: #f0f0f0;
+		margin: 0 -20px 0 -20px;
+	}
+	.timeWrap {
+		.keyTable .el-table__body-wrapper {
+			overflow: hidden;
+		}
+	}
+}

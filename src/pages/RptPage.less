@@ -1,0 +1,251 @@
+
+#rpt_container {
+	/* padding: 20px 20px 40px 20px; */
+	.el-date-editor--daterange.el-input {
+		width: 150px;
+		color: #fafafa;
+		border-color: #ddd;
+	}
+	background-color: #f0f0f0;
+	.TableContainer {
+		padding: 20px 20px 50px;
+		background-color: #fff;
+		.selected{
+			background-color: #107fd1;
+			border-color: #d9e7fd;
+			border-style: inset;
+		}
+		.sum-table {
+			.sum-tr .el-checkbox {
+				display: block !important;
+			}
+			.detail-tr .el-checkbox {
+				display: none !important;
+			}
+		}
+		.detail-table {
+			.sum-tr .el-checkbox {
+				display: none !important;
+			}
+			.detail-tr .el-checkbox {
+				display: block !important;
+			}
+		}
+		.detail-table-sum {
+			.sum-tr .el-checkbox {
+				display: block !important;
+			}
+			.detail-tr .el-checkbox {
+				display: block !important;
+			}
+		}
+		.el-pagination {
+			float: right;
+			margin-top: 10px;
+		}
+		.el-table__empty-block {
+			max-height: 150px;
+		}
+		.dataTable {
+			.el-table__body {
+				font-size: 12px;
+				color: #333;
+				.nodisplay {
+					display: none;
+				}
+			}
+			.el-table__header .el-checkbox {
+				display: none;
+			}
+		}
+		.el-table th>.cell {
+			font-size: 14px;
+			color: #000;
+		}
+		.sum-tr .tdNameWrap {
+			color: #333;
+			padding-right: 90px;
+		}
+		.sum-tr .thNameWrapSingle {
+			padding-right: 40px;
+			.detail-link {
+				right: 5px;
+			}
+		}
+		.detail-tr .tdNameWrap {
+			color: #666;
+			padding-left: 20px;
+			/* padding-right: 30px; */
+			padding-right: 60px;
+		}
+		.tdNameWrap {
+			position: relative;
+			/* padding-right: 30px; */
+			padding-right: 60px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		.tdNameWrap .name {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.tdNameWrap .link {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+		.tdNameWrap .timeLink {
+			right: 30px;
+		}
+		.tdNameWrap .detail-link {
+			/* right: 30px; */
+			right: 60px;
+		}
+		.rptWrap {
+			padding-bottom: 10px;
+			border-bottom: 1px solid #dfe6ec;
+			margin-bottom: 15px;
+			.el-icon-document {
+				margin-right: 10px;
+			}
+		}
+	}
+	.el-table__fixed, .el-table__fixed-right {
+		overflow: hidden;
+	}
+	.topContainer {
+		padding: 20px;
+		background-color: #fff;
+		margin-bottom: 20px;
+		.rptCharts {
+			.compareTab {
+				margin-top: 30px;
+				.el-tabs__header {
+					margin-bottom: 20px;
+				}
+				.el-tabs__item {
+					min-width: 90px;
+					height: 55px;
+					line-height: 55px;
+					text-align: center;
+				}
+				.el-tabs__item.is-active {
+					color: #ff3c00;
+				}
+				.el-tabs__active-bar {
+					background-color: #ff3c00;
+				}
+			}
+
+		}
+		.topWrap {
+			display: flex;
+			height: 82px;
+			.datePicker {
+				margin-right: 20px;
+				margin-top: 25px;
+			}
+			.showBox {
+				overflow: hidden;
+				position: relative;
+			}
+			.arrow {
+				background-color: #f4f4f4;
+				border-right: 0 !important;
+				cursor: pointer;
+				width: 30px;
+				text-align: center;
+				i {
+					color: #d4d4d4;
+					font-size: 20px;
+					margin-top: 30px;
+					display: inline-block;
+				}
+			}
+			.keyTable::before {
+				height: 0;
+			}
+			.el-table.keyTable:after {
+				width: 0;
+			}
+			.keyTable {
+				position: absolute;
+				border: none;
+				.moreDataWrap {
+					float: none !important;
+				}
+				.el-table__body-wrapper {
+					height: 108px;
+					table {
+						position: absolute;
+						transition: left 0.2s linear;
+					}
+				}
+				.el-table__body tr.hover-row>td {
+				    background-color: #fff;
+				}
+				.el-table__body tr.hover-row .arrow-column {
+					background-color: #f4f4f4;
+					cursor: pointer;
+				}
+				.el-table__fixed, .el-table__fixed-right {
+					box-shadow: none;
+				}
+				.el-table__fixed-right::before, .el-table__fixed::before {
+					height: 0;
+				}
+				td {
+					position: relative;
+					text-align: center;
+					border-bottom: none;
+					vertical-align: middle;
+					border-right: 2px solid #fff;
+					padding: 0;
+					.cell {
+						padding: 0;
+						.cellWrap {
+							padding: 10px;
+							cursor: pointer;
+						}
+						.active {
+							height: 60px;
+							background-color: #79B1FF;
+							.key, .keyValue {
+								color: #fff;
+							}
+						}
+					}
+					.el-icon-arrow-down {
+						margin-left: 10px;
+					}
+					p {
+						margin: 0;
+					}
+					.key {
+						color: #999;
+						white-space: nowrap;
+					}
+					.keyValue {
+						margin-top: 15px;
+						font-size: 20px;
+						white-space: nowrap;
+						color: #333;
+					}
+					.split {
+						position: absolute;
+						width: 1px;
+						height: 45px;
+						right: -1px;
+						top: 20px;
+						background-color: #e5ebf0;
+					}
+				}
+			}
+		}
+	}
+}
+.rptDatePicker {
+	left: 38px !important;
+}
+/* :local(#rpt_charts) {} */
